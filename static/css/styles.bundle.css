@@ -75,25 +75,8 @@ img {
     background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0, #fff 78%, #fff 100%);
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 78%, #fff 100%)
 }
-
-.bg-analytics {
-    background-image: url(../images/banner/analytics.jpg)
-}
-
-.bg-artists {
-    background-image: url(../images/banner/artists.jpg)
-}
-
-.bg-event {
-    background-image: url(../images/banner/event.jpg)
-}
-
 .bg-home {
     background-image: url(../images/banner/home.png)
-}
-
-.bg-radio {
-    background-image: url(../images/banner/radio.jpg)
 }
 
 .bg-song {

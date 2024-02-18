@@ -84,7 +84,7 @@ class SongRetrieveAPIView(RetrieveAPIView):
 #    serializer_class = SongSerializer
 #    model = serializer_class.Meta.model
 #    queryset = model.objects.all()
-   print("XDDD")
+
 
 
 #    def get(self, request, pk):

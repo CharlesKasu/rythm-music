@@ -20,7 +20,6 @@ class SongSerializer(serializers.ModelSerializer):
     genre = GenreSerializer()
     url = serializers.SerializerMethodField('get_url')
     artist = serializers.SerializerMethodField('get_joined_artist')
-    print("XDDD")
 
     class Meta:
         model = Song
