@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    {% csrf_token %}
+    <title>Rythm - Music App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/line-awesome@1.0.2/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="icon" type="image/png" href="/static/images/logos/favicon.png">
+    <style>
+        @font-face {
+            font-family: LineAwesome;
+            font-weight: 400;
+            font-style: normal
+        }
+
+        @font-face {
+            font-family: Ionicons;
+            font-weight: 400;
+            font-style: normal
+        }
+
+        @font-face {
+            font-family: slick;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @media screen and (-webkit-min-device-pixel-ratio: 0) {
+            @font-face {
+                font-family: LineAwesome;
+            }
+        }
+    </style>
+    {% include 'includes/stylesheets.html' %}
+    <link type="text/css" href="{% static 'css/custom.css' %}">
+    {% block stylesheets %}{% endblock %}
+</head>
+<body>
+<div id="loading">
+    <div class="loader">
+        <div class="eq">
+            <span class="eq-bar eq-bar--1"></span>
+            <span class="eq-bar eq-bar--2"></span>
+            <span class="eq-bar eq-bar--3"></span>
+            <span class="eq-bar eq-bar--4"></span>
+            <span class="eq-bar eq-bar--5"></span>
+            <span class="eq-bar eq-bar--6"></span>
+        </div>
+        <span class="text">Loading</span>
+    </div>
+</div>
+<div id="wrapper" data-scrollable="true">
+    {% include 'includes/sidebar.html' %}
+    {% include 'includes/nav.html' %}
+    {% block content %}{% endblock %}
+</div>
+<div class="backdrop header-backdrop"></div>
+<div class="backdrop sidebar-backdrop"></div>
+{% include 'includes/javascripts.html' %}
+{% block javascripts %}{% endblock %}
+</body>
+</html>
