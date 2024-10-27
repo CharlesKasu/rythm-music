@@ -2,7 +2,7 @@
 
 Ten projekt został stworzony przy użyciu Django REST API, umożliwiając dostęp do personalizowanych rekomendacji muzycznych dzięki zaawansowanym algorytmom uczenia maszynowego.
 
-### Uruchomienie aplikacji
+### Uruchomienie aplikacji lokalnie
 
 Aby uruchomić aplikację lokalnie, wykonaj poniższe kroki:
 
@@ -15,11 +15,7 @@ Aby uruchomić aplikację lokalnie, wykonaj poniższe kroki:
 3. **Uruchom serwer deweloperski**:
    python manage.py runserver
 
-### Uruchomienie produkcyjne
-
-W trybie produkcyjnym zaleca się wykorzystanie serwera WSGI, np. Gunicorn, oraz serwera Nginx do obsługi statycznych plików i reverse proxy:
-
-   gunicorn your_project_name.wsgi:application --bind 0.0.0.0:8000
+   Aplikacja będzie dostępna pod adresem `http://localhost:8000`.
 
 ### Endpointy API
 
@@ -40,4 +36,4 @@ Aby uruchomić testy jednostkowe, użyj poniższego polecenia:
 
 ---
 
-Dzięki za skorzystanie z mojej aplikacji muzycznej! 🎧
+Dzięki za skorzystanie z naszej aplikacji muzycznej! 🎧
